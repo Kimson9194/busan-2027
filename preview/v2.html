@@ -1,0 +1,79 @@
+<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Version 2 · 木框畫廊</title>
+<link href="https://fonts.googleapis.com/css2?family=Huninn&family=Nunito:wght@400;600;700;800&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}html,body{margin:0}
+body{font-family:'Nunito','Noto Sans TC',sans-serif;-webkit-text-size-adjust:100%}
+.ver{position:sticky;top:0;z-index:20;text-align:center;font-size:13px;font-weight:800;padding:6px;background:rgba(0,0,0,.72);color:#fff}
+.wrap{max-width:1000px;margin:0 auto;padding:10px 14px 80px;position:relative}
+header{text-align:center;position:relative;padding:10px 0 6px}
+h1{font-family:'Huninn','Nunito',sans-serif;font-weight:400;font-size:36px;margin:6px 0 2px}
+.sub{font-size:13.5px;opacity:.8}
+.hero{display:flex;justify-content:center;align-items:flex-end;gap:6px;height:130px}
+.hero img{height:100%;width:auto}
+nav{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin:12px 0}
+nav button{font:inherit;font-weight:800;font-size:14px;border:0;border-radius:20px;padding:8px 15px}
+.dates{display:flex;gap:6px;max-width:560px;margin:6px auto 0}
+.dt{flex:1;text-align:center;border-radius:14px;padding:8px 2px;background:#fff;font-weight:800;font-size:14px;box-shadow:0 2px 6px rgba(0,0,0,.06)}
+.dt small{display:block;font-size:11px;font-weight:600;opacity:.7}
+.card{padding:18px;margin:16px auto;max-width:560px;position:relative}
+.dh .k{font-size:13px;font-weight:700;opacity:.65}.dh .t{font-family:'Huninn';font-size:26px}
+.it{display:grid;grid-template-columns:50px 1fr;gap:12px;margin:12px 0}
+.tm{font-weight:800;text-align:right;font-size:15px}
+.tx{font-size:15.5px;line-height:1.5}
+.tag{display:inline-block;font-size:12px;font-weight:800;padding:2px 8px;border-radius:10px;margin-right:6px}
+.note{font-size:13.5px;opacity:.7;margin-top:3px}
+.lk{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+.lk a{font-size:12.5px;font-weight:800;text-decoration:none;color:inherit;background:rgba(0,0,0,.05);border-radius:12px;padding:4px 10px}
+.lk a.map{background:rgba(110,180,90,.18)}
+figure.ph{margin:14px 0;width:62%}
+figure.ph.L{margin-right:auto}figure.ph.R{margin-left:auto}
+.frame{position:relative}
+.frame img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;background:#ddd}
+figcaption{text-align:center;font-family:'Huninn';font-size:16px;margin-top:8px}
+figcaption small{display:block;font-family:'Nunito';font-size:10px;opacity:.6}
+.stk{filter:drop-shadow(2px 0 0 #fff) drop-shadow(-2px 0 0 #fff) drop-shadow(0 2px 0 #fff) drop-shadow(0 -2px 0 #fff) drop-shadow(0 4px 5px rgba(0,0,0,.18))}
+.stk.inline{display:block;width:120px;margin:-6px 0}
+img.stk.inline[src*="bush"]{width:200px}
+.stk.inline.R{margin-left:auto}.stk.inline.L{margin-right:auto}
+.corner{position:absolute;width:96px;z-index:3}
+.c1{top:-34px;right:-14px;transform:rotate(8deg)}
+.c2{bottom:-30px;left:-16px;width:120px}
+.c3{top:-40px;right:-12px;width:84px;transform:rotate(6deg)}
+.end{display:flex;justify-content:center;gap:10px;align-items:flex-end;margin-top:10px}
+.end img{width:120px}
+.side{display:none}
+@media(min-width:960px){
+ .layout{display:grid;grid-template-columns:200px 560px 200px;gap:20px;justify-content:center;align-items:start}
+ .layout .card{margin:16px 0}
+ .side{display:flex;flex-direction:column;gap:40px;padding-top:60px}
+ .side figure.ph{width:100%;margin:0}
+ .card figure.ph{display:none}
+}
+
+body{background:#efe6d6;background-image:linear-gradient(90deg,rgba(255,255,255,.25) 1px,transparent 1px);background-size:40px 100%;color:#3e3326}
+h1,.dh .t{font-family:'Huninn',serif}
+.card{background:#fffaf0;border-radius:6px;border:1px solid #e0d2b8;box-shadow:0 8px 18px rgba(80,55,25,.15)}
+nav button{background:#fffaf0;color:#5b4128;border:2px solid #8a6038;box-shadow:none}nav button.on{background:#8a6038;color:#fff}
+.tag{background:#e9dcc2;color:#5b4128}.tm{color:#a0522d}
+.frame{padding:14px;background:#fbf6ea;border:12px solid #8a5a32;border-image:linear-gradient(135deg,#b07a46,#6b4322 40%,#a06c3c 60%,#5e3a1c) 1;box-shadow:inset 0 0 0 2px #d9b46a,0 10px 16px rgba(50,30,10,.35)}
+.frame::before{content:'';position:absolute;top:-40px;left:50%;width:2px;height:0;}
+.ph .frame::after{content:'';position:absolute;top:-34px;left:50%;margin-left:-40px;width:80px;height:34px;border:2px solid #6b5040;border-bottom:0;clip-path:polygon(50% 0,100% 100%,0 100%);}
+.ph{padding-top:26px}
+.dt.on{background:#8a6038;color:#fff}
+</style></head><body>
+<div class="ver">Version 2 · 木框畫廊（樣板 · 只示範 Day 2）</div>
+<div class="wrap">
+<header><div class="hero"><img class="stk" src="stk/dance.png" alt="" style="height:85%"><img class="stk" src="stk/walk.png" alt=""><img class="stk" src="stk/relax.png" alt="" style="height:70%"></div>
+<h1>釜山 6日5夜</h1><div class="sub">2027.1.10（日）– 1.15（五）· 住廣安里</div></header>
+<nav><button>航班</button><button class="on">行程</button><button>購物</button><button>旅費</button><button>準備</button></nav>
+<div class="dates"><div class="dt">1/10<small>週日</small></div><div class="dt on">1/11<small>週一</small></div><div class="dt">1/12<small>週二</small></div><div class="dt">1/13<small>週三</small></div><div class="dt">1/14<small>週四</small></div><div class="dt">1/15<small>週五</small></div></div>
+<div class="layout">
+<div class="side"><figure class="ph L"><div class="frame"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Sky_Capsule_train_at_Haeundae_Blueline_Park%2C_Busan.jpg/960px-Sky_Capsule_train_at_Haeundae_Blueline_Park%2C_Busan.jpg" alt="天空膠囊列車" loading="lazy"></div><figcaption>天空膠囊列車<small>📷 VN.NguyenDucDuy · CC BY-SA 4.0 · Wikimedia Commons</small></figcaption></figure><img class="stk" src="stk/bush.png" alt="" style="width:100%"><figure class="ph L"><div class="frame"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Gwangan_Bridge1.jpg/960px-Gwangan_Bridge1.jpg" alt="廣安大橋" loading="lazy"></div><figcaption>廣安大橋<small>📷 Glabb · CC BY-SA 3.0 · Wikimedia Commons</small></figcaption></figure></div>
+<div>
+ <div class="card dh"><img class="stk corner c1" src="stk/point.gif" alt=""><div class="k">Day 2 · 1/11（一）· 住廣安里</div><div class="t">天空膠囊列車 · 海雲台</div></div>
+ <div class="card"><img class="stk corner c3" src="stk/hold.gif" alt=""><div class="it"><div class="tm">10:00</div><div class="tx"><span class="tag">食</span>早午餐：Oji Table 南川店<div class="note">澳洲式早午餐 · 10:50 要食完走</div><div class="lk"><a class="map" target="_blank" rel="noopener" href="https://map.naver.com/p/search/%EC%98%A4%EC%A7%80%ED%85%8C%EC%9D%B4%EB%B8%94%20%EB%82%A8%EC%B2%9C%EC%A0%90">📍 Naver 地圖</a><a target="_blank" rel="noopener" href="https://autoreserve.com/en/restaurants/N8vZMUYg4mLAB6f2svmJ">ℹ 資料</a></div></div></div><div class="it"><div class="tm">11:00</div><div class="tx"><span class="tag">地鐵</span>2 號線 → 海雲台站，行去尾浦站<div class="note">約 30–40 分鐘（估計）· 膠囊列車要提早 30 分鐘到</div></div></div><figure class="ph L"><div class="frame"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Sky_Capsule_train_at_Haeundae_Blueline_Park%2C_Busan.jpg/960px-Sky_Capsule_train_at_Haeundae_Blueline_Park%2C_Busan.jpg" alt="天空膠囊列車" loading="lazy"></div><figcaption>天空膠囊列車<small>📷 VN.NguyenDucDuy · CC BY-SA 4.0 · Wikimedia Commons</small></figcaption></figure><div class="it"><div class="tm">12:00</div><div class="tx"><span class="tag">膠囊</span>天空膠囊列車：尾浦 → 青沙浦<div class="note">★ 要預約 · 2 人單程約 ₩40,000 起 · 遲到張飛作廢</div><div class="lk"><a class="map" target="_blank" rel="noopener" href="https://map.naver.com/p/search/%ED%95%B4%EC%9A%B4%EB%8C%80%EB%B8%94%EB%A3%A8%EB%9D%BC%EC%9D%B8%ED%8C%8C%ED%81%AC%20%EB%AF%B8%ED%8F%AC%EC%A0%95%EA%B1%B0%EC%9E%A5">📍 Naver 地圖</a><a target="_blank" rel="noopener" href="https://hk.trip.com/blog/busan-sky-capsule-hk">ℹ 資料</a></div></div></div><div class="it"><div class="tm">12:40</div><div class="tx"><span class="tag">步行</span>青沙浦：紅白燈塔、天空步道<div class="lk"><a class="map" target="_blank" rel="noopener" href="https://map.naver.com/p/search/%EC%B2%AD%EC%82%AC%ED%8F%AC%20%EC%8C%8D%EB%91%A5%EC%9D%B4%EB%93%B1%EB%8C%80">📍 Naver 地圖</a><a target="_blank" rel="noopener" href="https://creatrip.com/blog/1848">ℹ 資料</a></div></div></div><img class="stk inline R" src="stk/explore.gif" alt=""><div class="it"><div class="tm">13:30</div><div class="tx"><span class="tag">列車</span>海岸列車返尾浦<div class="note">可以即場買飛</div></div></div><div class="it"><div class="tm">14:00</div><div class="tx"><span class="tag">食</span>午飯：31cm 海鮮刀削麵<div class="note">早午餐食完唔耐，叫少啲 · 1 人份約 ₩7,500</div><div class="lk"><a class="map" target="_blank" rel="noopener" href="https://map.naver.com/p/search/%ED%95%B4%EC%9A%B4%EB%8C%8031cm%ED%95%B4%EB%AC%BC%EC%B9%BC%EA%B5%AD%EC%88%98%20%ED%95%B4%EC%9A%B4%EB%8C%80%EC%8B%9C%EC%9E%A5">📍 Naver 地圖</a><a target="_blank" rel="noopener" href="https://world.nol.com/en/content/pois/08adf1cd-44a0-4371-8df5-062e7fa45c8c">ℹ 資料</a></div></div></div><figure class="ph R"><div class="frame"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Haeundae_Beach_20200522_005.jpg/960px-Haeundae_Beach_20200522_005.jpg" alt="海雲台海灘" loading="lazy"></div><figcaption>海雲台海灘<small>📷 Mobius6 · Wikimedia Commons</small></figcaption></figure><div class="it"><div class="tm">15:00</div><div class="tx"><span class="tag">購物</span>手信：Busan Bada Sand<div class="note">好快賣晒 · 1 盒 9 件約 ₩17,000 · 地址出發前再確認</div><div class="lk"><a class="map" target="_blank" rel="noopener" href="https://map.naver.com/p/search/%EB%B6%80%EC%82%B0%EB%B0%94%EB%8B%A4%EC%83%8C%EB%93%9C">📍 Naver 地圖</a><a target="_blank" rel="noopener" href="https://en.busannavi.net/area/45929">ℹ 資料</a></div></div></div><div class="it"><div class="tm">15:45</div><div class="tx"><span class="tag">食</span>Who's Who MUMU Bakery<div class="note">山洞主題麵包 cafe · 迎月路62番街3號 · 可以外賣</div><div class="lk"><a class="map" target="_blank" rel="noopener" href="https://map.naver.com/p/search/%ED%9B%84%EC%8A%A4%ED%9B%84%EB%AC%B4%EB%AC%B4">📍 Naver 地圖</a><a target="_blank" rel="noopener" href="https://starsofheavens.com/2025/12/08/whos-who-mumu-bakery-%ed%9b%84%ec%8a%a4%ed%9b%84%eb%ac%b4%eb%ac%b4-how-to-go-what-to-expect">ℹ 資料</a></div></div></div><img class="stk inline L" src="stk/bush.png" alt=""><div class="it"><div class="tm">17:00</div><div class="tx"><span class="tag">食</span>晚飯：尾浦家 尾浦本店<div class="note">釜飯 · 同 MUMU 同一個位 · 15:00–17:00 休息，17:00 啱啱開</div><div class="lk"><a class="map" target="_blank" rel="noopener" href="https://map.naver.com/p/search/%EB%8B%AC%EB%A7%9E%EC%9D%B4%EA%B8%B862%EB%B2%88%EA%B8%B8%203">📍 Naver 地圖</a><a target="_blank" rel="noopener" href="https://www.busannavi.net/eng/?p=38556">ℹ 資料</a></div></div></div><div class="it"><div class="tm">18:15</div><div class="tx"><span class="tag">地鐵</span>返廣安里</div></div><figure class="ph L"><div class="frame"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Gwangan_Bridge1.jpg/960px-Gwangan_Bridge1.jpg" alt="廣安大橋" loading="lazy"></div><figcaption>廣安大橋<small>📷 Glabb · CC BY-SA 3.0 · Wikimedia Commons</small></figcaption></figure><div class="it"><div class="tm">19:00</div><div class="tx"><span class="tag">步行</span>廣安里海灘睇大橋夜景，行路返屋企<div class="lk"><a class="map" target="_blank" rel="noopener" href="https://map.naver.com/p/search/%EA%B4%91%EC%95%88%EB%A6%AC%ED%95%B4%EC%88%98%EC%9A%95%EC%9E%A5">📍 Naver 地圖</a><a target="_blank" rel="noopener" href="https://www.funliday.com/posts/busan-spots-2025/">ℹ 資料</a></div></div></div>
+  <div class="end"><img class="stk" src="stk/cry.gif" alt=""><img class="stk" src="stk/wave.gif" alt=""><img class="stk" src="stk/scout.png" alt="" style="width:130px"></div></div>
+</div>
+<div class="side"><figure class="ph R"><div class="frame"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Haeundae_Beach_20200522_005.jpg/960px-Haeundae_Beach_20200522_005.jpg" alt="海雲台海灘" loading="lazy"></div><figcaption>海雲台海灘<small>📷 Mobius6 · Wikimedia Commons</small></figcaption></figure><img class="stk" src="stk/scout.png" alt="" style="width:100%"><img class="stk" src="stk/wave.gif" alt="" style="width:70%;margin:0 auto"></div>
+</div></div></body></html>
